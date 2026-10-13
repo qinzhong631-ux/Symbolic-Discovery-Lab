@@ -1,0 +1,14 @@
+{
+  "train_X": "0fb749e4fc20ef2cefa889db61a39f70fca67aa2b588c4fc27a98f1d5104a42e",
+  "train_y": "e01b5df16fd1d0b9fc3568ba25ad9c23a12eca31e5300489309dc9aa20be613b",
+  "train_clean": "1a0ed54c8cdb3757775e42e11f5b695e6354fddca473f6938e7e12130d36a7d1",
+  "validation_X": "aa8f87e3b9926a595b79a9f75211fdcbffdeb7fb9cbba30aa21c0e9ab00436e5",
+  "validation_y": "ece55173624b065e1c4709e3a4ea9c1fd1b7c4a6874f92407c1fa321748f5ba7",
+  "validation_clean": "e02ff11b3066fd9e8a3817d3bb4b20dea0c37c9aa9a6744aadad30b266e4186b",
+  "test_X": "b30520156fd02449fdc1d35cff7e02f93ca4b90977b0fe0a4483f41f5fbf6d29",
+  "test_y": "d9db4314045a80c62895a67e842fc0125f54049e543aebf3ace17aea1edc6eb0",
+  "test_clean": "786fe5246e00ab6bb0034c084aac6fecf6bf635b685f501befc9707d002ff570",
+  "ood_X": "d0561d7e1237fe62fc2bc9e983ac1c93f9a49f1071c4339140370778b356367a",
+  "ood_y": "2fadaf272e57e65d86b6c32c311ab685afaea7b11945c6a4a1f4e5da080c4cc1",
+  "ood_clean": "66f1a063286fe7f5affe79009eea2aed52e232daf16305161bd7871d5e5a9659"
+}

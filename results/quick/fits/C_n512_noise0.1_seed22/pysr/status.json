@@ -1,0 +1,10 @@
+{
+  "dataset": "C",
+  "n_train": 512,
+  "noise": 0.1,
+  "seed": 22,
+  "model": "pysr",
+  "status": "ok",
+  "training_seconds": 1.7354838999999629,
+  "wall_seconds": 2.083838000000469
+}

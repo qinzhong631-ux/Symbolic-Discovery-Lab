@@ -1,0 +1,4 @@
+dataset,n_train,noise,model,symbolic_equivalent_mean,symbolic_equivalent_std,symbolic_recovery_mean,symbolic_recovery_std,numerical_equivalent_mean,numerical_equivalent_std,finite_on_probes_mean,finite_on_probes_std,n_seeds
+A,32,0.0,polynomial,0.0,,0.0,,1.0,,1.0,,1
+B,32,0.0,polynomial,0.0,,0.0,,0.0,,1.0,,1
+C,32,0.0,polynomial,0.0,,0.0,,0.0,,1.0,,1

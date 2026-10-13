@@ -1,0 +1,51 @@
+{
+  "parameters": {
+    "hidden_sizes": [
+      64,
+      64
+    ],
+    "epochs": 500,
+    "patience": 60,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0,
+    "min_delta": 1e-08,
+    "threads": 1
+  },
+  "seed": 33,
+  "device": "cpu",
+  "epochs_run": 500,
+  "best_epoch": 500,
+  "best_validation_mse": 0.00944494608047737,
+  "parameter_count": 4417,
+  "x_mean": [
+    -0.02930462034171488,
+    0.11215108503486898
+  ],
+  "x_std": [
+    1.137083844296074,
+    1.1706328936135721
+  ],
+  "y_mean": 0.6729284447425472,
+  "y_std": 0.993645893116591,
+  "timing_scope": "initialization + preprocessing + training + restore",
+  "activation": "Tanh",
+  "batching": "full batch",
+  "dtype": "float32",
+  "optimizer": "Adam",
+  "optimizer_parameters": {
+    "lr": 0.003,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "amsgrad": false,
+    "maximize": false,
+    "foreach": null,
+    "capturable": false,
+    "differentiable": false,
+    "fused": null,
+    "decoupled_weight_decay": false
+  }
+}

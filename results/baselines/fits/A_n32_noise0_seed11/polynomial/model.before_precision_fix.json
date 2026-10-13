@@ -1,0 +1,9 @@
+{
+  "parameters": {
+    "degree": 3
+  },
+  "expression": "5.74421325246178e-16*x0**3 + 1.16433136277674e-15*x0**2*x1 + 2.0*x0**2 + 4.21773774596208e-16*x0*x1**2 + 5.82700345830589e-16*x0*x1 - 6.01029061236107e-16*x0 + 6.70822172973414e-16*x1**3 + 1.32682836632128e-15*x1**2 - 3.00000000000001*x1 + 0.999999999999998",
+  "sympy_nodes": 44,
+  "coefficient_count": 10,
+  "timing_scope": "preprocessing + least squares + expression export"
+}

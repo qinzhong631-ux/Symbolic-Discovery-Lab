@@ -1,0 +1,10 @@
+{
+  "dataset": "A",
+  "n_train": 512,
+  "noise": 0.0,
+  "seed": 11,
+  "model": "polynomial",
+  "status": "ok",
+  "training_seconds": 0.0066817999995691935,
+  "wall_seconds": 0.06384390000039275
+}

@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "degree": 3
+  },
+  "expression": "-0.00501445633426458*x0**3 + 0.00214330275284976*x0**2*x1 + 1.99846746167711*x0**2 - 0.00354659646673864*x0*x1**2 + 0.0036176579625353*x0*x1 + 0.0211463634679997*x0 - 0.00188636817575978*x1**3 + 0.00263191039895531*x1**2 - 3.00984945609904*x1 + 0.996997463078908",
+  "sympy_nodes": 44,
+  "coefficient_count": 10,
+  "timing_scope": "preprocessing + least squares + expression export",
+  "estimator_parameters": {
+    "copy_X": true,
+    "fit_intercept": true,
+    "n_jobs": null,
+    "positive": false,
+    "tol": 1e-06
+  },
+  "feature_parameters": {
+    "degree": 3,
+    "include_bias": false,
+    "interaction_only": false,
+    "order": "C"
+  }
+}

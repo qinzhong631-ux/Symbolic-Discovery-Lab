@@ -1,0 +1,10 @@
+{
+  "dataset": "B",
+  "n_train": 512,
+  "noise": 0.0,
+  "seed": 22,
+  "model": "mlp",
+  "status": "ok",
+  "training_seconds": 1.247863900000084,
+  "wall_seconds": 1.2667958000001818
+}

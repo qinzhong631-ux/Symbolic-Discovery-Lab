@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "hidden_sizes": [
+      64,
+      64
+    ],
+    "epochs": 500,
+    "patience": 60,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0,
+    "min_delta": 1e-08,
+    "threads": 1
+  },
+  "seed": 33,
+  "device": "cpu",
+  "epochs_run": 500,
+  "best_epoch": 500,
+  "best_validation_mse": 0.006386977719678411,
+  "parameter_count": 4417,
+  "x_mean": [
+    0.24021890478620583,
+    -0.3758612229917723
+  ],
+  "x_std": [
+    1.0987973606594217,
+    1.322306411688495
+  ],
+  "y_mean": 1.1046832925374617,
+  "y_std": 0.8278098377869965,
+  "timing_scope": "initialization + preprocessing + training + restore"
+}

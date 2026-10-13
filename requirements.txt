@@ -1,0 +1,13 @@
+# Recorded direct dependency versions; Python 3.14.2 / Windows CPU verification.
+# PySR initializes/downloads Julia on its first import.
+numpy==2.4.0
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.9.1
+torch==2.14.1
+sympy==1.14.0
+matplotlib==3.10.8
+gradio==6.16.0
+pysr==2.7.0
+pytest==9.1.1
+ruff==0.17.0

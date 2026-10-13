@@ -1,0 +1,13 @@
+{
+  "status": "ok",
+  "url": "http://127.0.0.1:7861",
+  "model": "polynomial",
+  "test_rmse": 4.132937087988107e-15,
+  "plot_type": "png",
+  "verified_model_sequence": [
+    "polynomial",
+    "mlp",
+    "pysr",
+    "all"
+  ]
+}

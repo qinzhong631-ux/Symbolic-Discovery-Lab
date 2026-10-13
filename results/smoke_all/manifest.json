@@ -1,0 +1,196 @@
+{
+  "status": "complete",
+  "config": {
+    "datasets": [
+      "A",
+      "B",
+      "C"
+    ],
+    "seeds": [
+      42
+    ],
+    "sample_sizes": [
+      32
+    ],
+    "noise_levels": [
+      0.0
+    ],
+    "reference_n": 32,
+    "n_validation": 32,
+    "n_test": 64,
+    "n_ood": 64,
+    "models": [
+      "polynomial",
+      "mlp",
+      "pysr"
+    ],
+    "polynomial": {
+      "degree": 3
+    },
+    "mlp": {
+      "epochs": 30,
+      "patience": 10,
+      "hidden_sizes": [
+        32,
+        32
+      ]
+    },
+    "pysr": {
+      "niterations": 5,
+      "populations": 3,
+      "maxsize": 16,
+      "timeout_in_seconds": 10
+    }
+  },
+  "environment": {
+    "timestamp_utc": "2026-10-13T15:11:51.975453+00:00",
+    "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_count": 8,
+    "packages": {
+      "numpy": "2.4.0",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.1+cpu",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.8",
+      "gradio": "6.16.0",
+      "pysr": "2.7.0",
+      "juliacall": "0.9.36",
+      "pytest": "9.1.1"
+    },
+    "git_commit": null,
+    "julia_environment": {
+      "JULIA_DEPOT_PATH": "E:\\AI\\symbolic-discovery-lab\\.julia",
+      "PYTHON_JULIACALL_THREADS": "1",
+      "PYTHON_JULIAPKG_EXE": null
+    }
+  },
+  "source_hashes": {
+    "__init__.py": "2519aaf4975ec9239513c07dbb07709b32e7cb7ddcf73cf317f8869f67eb3dbd",
+    "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "cli.py": "231affbe0a4493dc14c55daeb06e331a0ece623ea33d69f6a086c0bc8b31f072",
+    "data.py": "f33e2c837b0d722c6b358e25abe2c41b2d9a1a83b34353662ec3cf395fec04d0",
+    "demo.py": "b39dd465fa862cb4c88fa546d416c123373c6662887a4aa69478737911eb1208",
+    "experiments.py": "bf7546dfa2faa8526a741e011c06aed89dd48be27d98881e25fd48496b87510b",
+    "metrics.py": "d08ae58dcedb082f70b0de168cf0a069aea733d19c28229af0b85af8f8f40233",
+    "models\\__init__.py": "3e715b6390e002add7925c4946b83835f3080f4837e563a0a16457d091e6e515",
+    "models\\mlp.py": "7c3b11c19bb58e8dbacb25382a4ebf284ad4c30bceed03c938f81f8bd360fd24",
+    "models\\polynomial.py": "a8dd80e7dd1b349d871722f66403161db6b28cf9eaf66b388324fa8c208500c6",
+    "models\\symbolic.py": "d8cc99563c75a38183ea12682fa5b5703f80502b14e01a1f333eda4ba3ceb1a1",
+    "plotting.py": "8cfc594072bd787be3c2d46f385d6f443eff77f9686951d519ebbba0cfc39fe5",
+    "report.py": "ef9acc8b059ce5bf217e2a7fb961e77f5312ebdbbe9005b87058b75f743f79cf",
+    "runtime.py": "bd465c8c78713f4d591be3b9793fb460cd02d6f6ef2da9a9b8f16b5a7813e30e"
+  },
+  "conditions": [
+    [
+      32,
+      0.0
+    ]
+  ],
+  "expected_fits": 9,
+  "fits": [
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.11252260000037495,
+      "wall_seconds": 0.5230489000005036
+    },
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 5.203777500000797,
+      "wall_seconds": 17.50479820000146
+    },
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "pysr",
+      "status": "ok",
+      "training_seconds": 102.99040220000097,
+      "wall_seconds": 103.55107329999919
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.011495200000354089,
+      "wall_seconds": 1.509786399999939
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.3729204999999638,
+      "wall_seconds": 0.5376641999991989
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "pysr",
+      "status": "ok",
+      "training_seconds": 1.8447266000002855,
+      "wall_seconds": 1.964306600000782
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.013791899998977897,
+      "wall_seconds": 0.48096129999976256
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.17281369999909657,
+      "wall_seconds": 0.41820799999914016
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "pysr",
+      "status": "ok",
+      "training_seconds": 2.2254953000010573,
+      "wall_seconds": 3.0128770999999688
+    }
+  ],
+  "backend_initialization": {
+    "status": "ok",
+    "pysr": "2.7.0",
+    "julia": "1.11.9",
+    "seconds": 26.545416700000715
+  },
+  "failed_fits": 0,
+  "artifact_status": "complete",
+  "julia_version": "1.11.9",
+  "symbolic_regression_version": "2.7.0"
+}

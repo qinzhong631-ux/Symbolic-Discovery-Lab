@@ -1,0 +1,1017 @@
+{
+  "status": "complete",
+  "config": {
+    "datasets": [
+      "A",
+      "B",
+      "C"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "sample_sizes": [
+      32,
+      128,
+      512
+    ],
+    "noise_levels": [
+      0.0,
+      0.1,
+      0.5
+    ],
+    "reference_n": 512,
+    "n_validation": 128,
+    "n_test": 256,
+    "n_ood": 256,
+    "models": [
+      "polynomial",
+      "mlp"
+    ],
+    "polynomial": {
+      "degree": 3
+    },
+    "mlp": {
+      "epochs": 500,
+      "patience": 60,
+      "hidden_sizes": [
+        64,
+        64
+      ]
+    },
+    "pysr": {
+      "niterations": 40,
+      "populations": 4,
+      "maxsize": 20,
+      "timeout_in_seconds": 12
+    }
+  },
+  "environment": {
+    "timestamp_utc": "2026-10-13T14:45:24.582770+00:00",
+    "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_count": 8,
+    "packages": {
+      "numpy": "2.4.0",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.1+cpu",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.8",
+      "gradio": "6.16.0",
+      "pysr": "2.7.0",
+      "juliacall": "0.9.36",
+      "pytest": "9.1.1"
+    },
+    "git_commit": null,
+    "julia_environment": {
+      "JULIA_DEPOT_PATH": null,
+      "PYTHON_JULIACALL_THREADS": null,
+      "PYTHON_JULIAPKG_EXE": null
+    }
+  },
+  "source_hashes": {
+    "__init__.py": "2519aaf4975ec9239513c07dbb07709b32e7cb7ddcf73cf317f8869f67eb3dbd",
+    "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "cli.py": "a3beed13d335e931bd67975294e4acc71c7f67e04c10be133d37bbda16320fd2",
+    "data.py": "f33e2c837b0d722c6b358e25abe2c41b2d9a1a83b34353662ec3cf395fec04d0",
+    "experiments.py": "8d26dc9e5238d69608826ee0b65140a302ce1ed81fa374ec8b8ba5b646c7f670",
+    "metrics.py": "c150e3baa22c7c3446663c7f4763a49fc8949faf1bbb35c84eab59b627b3b5d4",
+    "models\\__init__.py": "3e715b6390e002add7925c4946b83835f3080f4837e563a0a16457d091e6e515",
+    "models\\mlp.py": "dd496febcb6b61676be1ea8fb2f61af4f53ae72367cbbf26379a9073c810de30",
+    "models\\polynomial.py": "322b2fd88f6919eace07fe2a1d496b26566438e4518340d369ad00aad94bbbd8",
+    "models\\symbolic.py": "f4b58e89a5bd846b238875a1d41f5e25f1b1db926399d9fdb3f415b8f12e2c3d",
+    "plotting.py": "9a07ec6e464a9e41cd2c08243adbec045cc83c94bbafb64eb3f641d6b4e0aebe",
+    "report.py": "8f6d25167a1e4d20df6f844a12526f63c455dbc59cf9e061fdf1a3b33969b1ef",
+    "runtime.py": "2253923dc476bfd8012feae3adc14b8d515cb8748c7b4818949c83be63f715f5"
+  },
+  "conditions": [
+    [
+      32,
+      0.0
+    ],
+    [
+      128,
+      0.0
+    ],
+    [
+      512,
+      0.0
+    ],
+    [
+      512,
+      0.1
+    ],
+    [
+      512,
+      0.5
+    ]
+  ],
+  "expected_fits": 90,
+  "fits": [
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.034235899999657704,
+      "wall_seconds": 0.20797919999949954
+    },
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.8959330000006958,
+      "wall_seconds": 1.917192800000521
+    },
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007497999999941385,
+      "wall_seconds": 0.06813839999995253
+    },
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.6775385999999344,
+      "wall_seconds": 0.6951609000007011
+    },
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007181500000115193,
+      "wall_seconds": 0.06276710000020103
+    },
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.7338981000002605,
+      "wall_seconds": 0.7536724000001414
+    },
+    {
+      "dataset": "A",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.0065104999994218815,
+      "wall_seconds": 0.0854405999998562
+    },
+    {
+      "dataset": "A",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.8908873000000312,
+      "wall_seconds": 0.9125377999998818
+    },
+    {
+      "dataset": "A",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007103099999767437,
+      "wall_seconds": 0.08209770000030403
+    },
+    {
+      "dataset": "A",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.7881509000008009,
+      "wall_seconds": 0.8041275999994468
+    },
+    {
+      "dataset": "A",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.005882500000552682,
+      "wall_seconds": 0.061849400000028254
+    },
+    {
+      "dataset": "A",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.7592709000000468,
+      "wall_seconds": 0.7774617000004582
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.0066817999995691935,
+      "wall_seconds": 0.06384390000039275
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.1800353999997242,
+      "wall_seconds": 1.2023128999999244
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.0073011999993468635,
+      "wall_seconds": 0.07056130000000849
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.2218017000004693,
+      "wall_seconds": 1.2492000000002008
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006513499999527994,
+      "wall_seconds": 0.0671399000002566
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.201896399999896,
+      "wall_seconds": 1.2203796000003422
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007164300000113144,
+      "wall_seconds": 0.07783159999962663
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.0589459000002535,
+      "wall_seconds": 1.0774666999996043
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006762500000149885,
+      "wall_seconds": 0.07434310000007827
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.0360972999997102,
+      "wall_seconds": 1.0542703999999503
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007676700000047276,
+      "wall_seconds": 0.07465989999946032
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.0426569999999629,
+      "wall_seconds": 1.0589012000000366
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.0063497999999526655,
+      "wall_seconds": 0.07485470000028727
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.5130154000007678,
+      "wall_seconds": 0.5289856999997937
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006254499999158725,
+      "wall_seconds": 0.07992729999932635
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.0406354999995528,
+      "wall_seconds": 1.0582408999998734
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006298600000263832,
+      "wall_seconds": 0.07447950000005221
+    },
+    {
+      "dataset": "A",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.0375446000007287,
+      "wall_seconds": 1.055378799999744
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006497000000308617,
+      "wall_seconds": 0.4456700999999157
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.6824199000002409,
+      "wall_seconds": 0.6984848000001875
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.0060469000000011874,
+      "wall_seconds": 0.4996811000000889
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.6065818999995827,
+      "wall_seconds": 0.6239891999994143
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.0073829000002660905,
+      "wall_seconds": 0.5641179000003831
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.6856095000002824,
+      "wall_seconds": 0.7045766999999614
+    },
+    {
+      "dataset": "B",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.0075423999996928615,
+      "wall_seconds": 0.1937668999999005
+    },
+    {
+      "dataset": "B",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.8058625000003303,
+      "wall_seconds": 0.8266435999994428
+    },
+    {
+      "dataset": "B",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.009515099999589438,
+      "wall_seconds": 0.4277197999999771
+    },
+    {
+      "dataset": "B",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.7987709999997605,
+      "wall_seconds": 0.8190060999995694
+    },
+    {
+      "dataset": "B",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.008817300000373507,
+      "wall_seconds": 0.677512499999466
+    },
+    {
+      "dataset": "B",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.7595817999999781,
+      "wall_seconds": 0.7771807999997691
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006708099999741535,
+      "wall_seconds": 0.6795515000003434
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.0245396000000255,
+      "wall_seconds": 1.0447232000005897
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006283199999415956,
+      "wall_seconds": 0.4421760000004724
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.030717700000423,
+      "wall_seconds": 1.0491393000002063
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007066000000122585,
+      "wall_seconds": 0.22486949999984063
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.0245107000000644,
+      "wall_seconds": 1.041735100000551
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006391599999915343,
+      "wall_seconds": 0.34641970000029687
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.0259801000001971,
+      "wall_seconds": 1.0419640999998592
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006353099999614642,
+      "wall_seconds": 0.4887854000007792
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.0680827000005593,
+      "wall_seconds": 1.0865708000001177
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006366200000229583,
+      "wall_seconds": 0.4479596999999558
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.2860662000002776,
+      "wall_seconds": 1.312580199999502
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007636299999830953,
+      "wall_seconds": 0.8377550999994128
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.6311924000001454,
+      "wall_seconds": 0.6486706000005142
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.00869059999968158,
+      "wall_seconds": 0.2066700999994282
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.7764975999998569,
+      "wall_seconds": 0.792839400000048
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.0076708000005965005,
+      "wall_seconds": 0.657086100000015
+    },
+    {
+      "dataset": "B",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.890500699999393,
+      "wall_seconds": 0.9085863000000245
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006345699999656063,
+      "wall_seconds": 0.14907579999999143
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.6711447000006956,
+      "wall_seconds": 0.6888383000004978
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.005807599999570812,
+      "wall_seconds": 0.13961300000028132
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.6959719999995286,
+      "wall_seconds": 0.7192109999996319
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007263200000124925,
+      "wall_seconds": 0.15159700000003795
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.6706146999995326,
+      "wall_seconds": 0.6881864000006317
+    },
+    {
+      "dataset": "C",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007008999999925436,
+      "wall_seconds": 0.13902080000025308
+    },
+    {
+      "dataset": "C",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.7986020000007557,
+      "wall_seconds": 0.8279946000002383
+    },
+    {
+      "dataset": "C",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007384999999885622,
+      "wall_seconds": 0.16434790000039357
+    },
+    {
+      "dataset": "C",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.7516621000004307,
+      "wall_seconds": 0.7699537999997119
+    },
+    {
+      "dataset": "C",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006767900000340887,
+      "wall_seconds": 0.15687470000011672
+    },
+    {
+      "dataset": "C",
+      "n_train": 128,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.8105999999997948,
+      "wall_seconds": 0.836112800000592
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.009315700000115612,
+      "wall_seconds": 0.24104410000018106
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.6771271999996316,
+      "wall_seconds": 1.7027640000005704
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.008543999999346852,
+      "wall_seconds": 0.1695704999992813
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.2183602999994037,
+      "wall_seconds": 1.2372030999995332
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.006714899999678892,
+      "wall_seconds": 0.18975630000022647
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.0,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.1701352000000043,
+      "wall_seconds": 1.1967279000000417
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.00728869999966264,
+      "wall_seconds": 0.17129270000077668
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.2035985000002256,
+      "wall_seconds": 1.225478800000019
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007764799999677052,
+      "wall_seconds": 0.1567525000000387
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.203758900000139,
+      "wall_seconds": 1.221815500000048
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007958399999552057,
+      "wall_seconds": 0.17345130000012432
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.1,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.2058944999998857,
+      "wall_seconds": 1.2281733999998323
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 11,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007765399999698275,
+      "wall_seconds": 0.17411230000016076
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 11,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.2814845000002606,
+      "wall_seconds": 0.3001936000000569
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 22,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.007359299999734503,
+      "wall_seconds": 0.15372930000012275
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 22,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.0623792000005778,
+      "wall_seconds": 1.081713800000216
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 33,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.010444099999403988,
+      "wall_seconds": 0.16364919999978156
+    },
+    {
+      "dataset": "C",
+      "n_train": 512,
+      "noise": 0.5,
+      "seed": 33,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.1020785000000615,
+      "wall_seconds": 1.1518330999997488
+    }
+  ],
+  "failed_fits": 0
+}

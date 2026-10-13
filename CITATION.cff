@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the upstream software used in your experiments."
+title: "Symbolic Discovery Lab: Discovering Mathematical Laws from Data"
+authors:
+  - name: "Symbolic Discovery Lab contributors"
+type: software
+repository-code: "https://github.com/qinzhong631-ux/Symbolic-Discovery-Lab"
+version: 0.1.0
+date-released: 2026-10-13
+license: MIT
+abstract: "An exploratory, reproducible CPU study of symbolic regression, polynomial regression and neural prediction on synthetic mathematical laws."

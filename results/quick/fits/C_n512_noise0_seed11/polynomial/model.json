@@ -1,0 +1,74 @@
+{
+  "parameters": {
+    "degree": 3
+  },
+  "expression": "0.012659934403198136*x0**3 + 0.0011198603498092962*x0**2*x1 + 0.003616556218896112*x0**2 - 0.20313553302733414*x0*x1**2 - 0.005696401070446813*x0*x1 + 0.8006430212997978*x0 - 0.003357726212634277*x1**3 - 0.004081331982397508*x1**2 + 0.009394228668194398*x1 + 0.006795655133092063",
+  "sympy_nodes": 44,
+  "coefficient_count": 10,
+  "timing_scope": "preprocessing + least squares + expression export",
+  "estimator_parameters": {
+    "copy_X": true,
+    "fit_intercept": true,
+    "n_jobs": null,
+    "positive": false,
+    "tol": 1e-06
+  },
+  "feature_parameters": {
+    "degree": 3,
+    "include_bias": false,
+    "interaction_only": false,
+    "order": "C"
+  },
+  "raw_coefficients": [
+    0.8006430212997978,
+    0.009394228668194398,
+    0.003616556218896112,
+    -0.005696401070446813,
+    -0.004081331982397508,
+    0.012659934403198136,
+    0.0011198603498092962,
+    -0.20313553302733414,
+    -0.003357726212634277
+  ],
+  "raw_intercept": 0.006795655133092063,
+  "powers": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "export_decimal_digits": 17,
+  "export_reconstruction": "deterministic OLS from original saved training arrays"
+}

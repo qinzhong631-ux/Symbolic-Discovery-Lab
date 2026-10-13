@@ -1,0 +1,155 @@
+{
+  "status": "complete",
+  "config": {
+    "datasets": [
+      "A",
+      "B",
+      "C"
+    ],
+    "seeds": [
+      42
+    ],
+    "sample_sizes": [
+      32
+    ],
+    "noise_levels": [
+      0.0
+    ],
+    "reference_n": 32,
+    "n_validation": 32,
+    "n_test": 64,
+    "n_ood": 64,
+    "models": [
+      "polynomial",
+      "mlp"
+    ],
+    "polynomial": {
+      "degree": 3
+    },
+    "mlp": {
+      "epochs": 30,
+      "patience": 10,
+      "hidden_sizes": [
+        32,
+        32
+      ]
+    },
+    "pysr": {
+      "niterations": 5,
+      "populations": 3,
+      "maxsize": 16,
+      "timeout_in_seconds": 10
+    }
+  },
+  "environment": {
+    "timestamp_utc": "2026-10-13T14:44:23.464809+00:00",
+    "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_count": 8,
+    "packages": {
+      "numpy": "2.4.0",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.1+cpu",
+      "sympy": "1.14.0",
+      "matplotlib": "3.10.8",
+      "gradio": "6.16.0",
+      "pysr": "2.7.0",
+      "juliacall": "0.9.36",
+      "pytest": "9.1.1"
+    },
+    "git_commit": null,
+    "julia_environment": {
+      "JULIA_DEPOT_PATH": null,
+      "PYTHON_JULIACALL_THREADS": null,
+      "PYTHON_JULIAPKG_EXE": null
+    }
+  },
+  "source_hashes": {
+    "__init__.py": "2519aaf4975ec9239513c07dbb07709b32e7cb7ddcf73cf317f8869f67eb3dbd",
+    "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "cli.py": "037430a48d2a5e98efdbcb4e53cd794177ac935890047645b5bab49f0b062b15",
+    "data.py": "d174fdfe535a84bf64e8a1a41de2ae9360d6e16bcb5c8ccb24fa2ff98f2c0f9d",
+    "experiments.py": "1de7615e7bdb2420a5753451f939e37597c0e13e11a7c979ed9e3ffda1da091b",
+    "metrics.py": "820d1382c11639edf197d558af2fe56b312446025ce88d57fab6d08596f69718",
+    "models\\__init__.py": "3e715b6390e002add7925c4946b83835f3080f4837e563a0a16457d091e6e515",
+    "models\\mlp.py": "185a0066ae6cae0fa64804b85ad2f67dd76e4e1b397a3ef258ccdab270ff8179",
+    "models\\polynomial.py": "bd955458d70d6264ff79edd0846e2090b657f4878c467864c422aa94521560d3",
+    "models\\symbolic.py": "0c37fc111f393c66426cd457bf3dedc9976a161711e7a1a00cc03031c9fd7141",
+    "plotting.py": "f92d7d8da06e949cdde4f6cd7469012d7a385787870c21a46d8a974597a55c13",
+    "report.py": "788c0cee8d476d72dd060a69576684ffb92e7bfaae2ab0defa7c5d6c172d470f",
+    "runtime.py": "21264aebbb126c0ce194af2e7b149f3b1f349b7dab7bd6064e98cd1067597a6d"
+  },
+  "conditions": [
+    [
+      32,
+      0.0
+    ]
+  ],
+  "expected_fits": 6,
+  "fits": [
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.0465198000001692,
+      "wall_seconds": 0.27908800000022893
+    },
+    {
+      "dataset": "A",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 1.8939204999996946,
+      "wall_seconds": 1.9172775000006368
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.011976200000390236,
+      "wall_seconds": 0.5935622000006333
+    },
+    {
+      "dataset": "B",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.20110320000003412,
+      "wall_seconds": 0.22303199999987555
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "polynomial",
+      "status": "ok",
+      "training_seconds": 0.00796600000012404,
+      "wall_seconds": 0.20564180000019405
+    },
+    {
+      "dataset": "C",
+      "n_train": 32,
+      "noise": 0.0,
+      "seed": 42,
+      "model": "mlp",
+      "status": "ok",
+      "training_seconds": 0.039681900000687165,
+      "wall_seconds": 0.055677299999842944
+    }
+  ],
+  "failed_fits": 0
+}

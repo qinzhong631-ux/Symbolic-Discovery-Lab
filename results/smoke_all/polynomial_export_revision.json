@@ -1,0 +1,37 @@
+{
+  "method": "17-digit round-trip coefficients; deterministic OLS reconstruction",
+  "refitted_for_export_only": "polynomial",
+  "pysr_mlp_refitted": false,
+  "metric_records_changed": 0,
+  "source_hashes": {
+    "__init__.py": "2519aaf4975ec9239513c07dbb07709b32e7cb7ddcf73cf317f8869f67eb3dbd",
+    "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "cli.py": "231affbe0a4493dc14c55daeb06e331a0ece623ea33d69f6a086c0bc8b31f072",
+    "data.py": "f33e2c837b0d722c6b358e25abe2c41b2d9a1a83b34353662ec3cf395fec04d0",
+    "demo.py": "58a2b038d5258ebc1ae76becb57494228e7e4e56679477756aecf301d5ea8a90",
+    "demo_worker.py": "d3b2bf46d82b5f6ab5ab8e63704adf370a1a4e290394d3aef8c53be5eed13b41",
+    "experiments.py": "bf7546dfa2faa8526a741e011c06aed89dd48be27d98881e25fd48496b87510b",
+    "metrics.py": "d08ae58dcedb082f70b0de168cf0a069aea733d19c28229af0b85af8f8f40233",
+    "models\\__init__.py": "3e715b6390e002add7925c4946b83835f3080f4837e563a0a16457d091e6e515",
+    "models\\mlp.py": "7c3b11c19bb58e8dbacb25382a4ebf284ad4c30bceed03c938f81f8bd360fd24",
+    "models\\polynomial.py": "d73cdd25cd4e9a0bbb4f39075c60aa51368b272a502a1be12cda1a93417f8702",
+    "models\\symbolic.py": "d8cc99563c75a38183ea12682fa5b5703f80502b14e01a1f333eda4ba3ceb1a1",
+    "plotting.py": "8cfc594072bd787be3c2d46f385d6f443eff77f9686951d519ebbba0cfc39fe5",
+    "report.py": "16971b064d6b048b824f04b975dd98eb94671568f43ff12fae2b6ff32d4155ef",
+    "runtime.py": "bd465c8c78713f4d591be3b9793fb460cd02d6f6ef2da9a9b8f16b5a7813e30e"
+  },
+  "checks": [
+    {
+      "condition": "A_n32_noise0_seed42",
+      "max_prediction_delta": 0.0
+    },
+    {
+      "condition": "B_n32_noise0_seed42",
+      "max_prediction_delta": 0.0
+    },
+    {
+      "condition": "C_n32_noise0_seed42",
+      "max_prediction_delta": 0.0
+    }
+  ]
+}

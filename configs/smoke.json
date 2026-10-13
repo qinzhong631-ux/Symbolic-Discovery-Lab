@@ -1,0 +1,9 @@
+{
+  "datasets": ["A", "B", "C"], "seeds": [42],
+  "sample_sizes": [32], "noise_levels": [0.0], "reference_n": 32,
+  "n_validation": 32, "n_test": 64, "n_ood": 64,
+  "models": ["polynomial", "mlp"],
+  "polynomial": {"degree": 3},
+  "mlp": {"epochs": 30, "patience": 10, "hidden_sizes": [32, 32]},
+  "pysr": {"niterations": 5, "populations": 3, "maxsize": 16, "timeout_in_seconds": 10}
+}

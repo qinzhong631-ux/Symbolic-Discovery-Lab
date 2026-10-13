@@ -10,6 +10,7 @@
   <img alt="PySR 2.7.0" src="https://img.shields.io/badge/PySR-2.7.0-3b6d91?style=for-the-badge"/>
   <img alt="CPU PyTorch" src="https://img.shields.io/badge/PyTorch-CPU-7972a5?style=for-the-badge&amp;logo=pytorch&amp;logoColor=white"/>
   <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge"/></a>
+  <a href="https://github.com/qinzhong631-ux/Symbolic-Discovery-Lab/actions/workflows/tests.yml"><img alt="CPU checks" src="https://img.shields.io/github/actions/workflow/status/qinzhong631-ux/Symbolic-Discovery-Lab/tests.yml?branch=main&amp;style=for-the-badge&amp;label=CPU%20checks&amp;logo=githubactions&amp;logoColor=white"/></a>
 </p>
 
 <p align="center">
@@ -69,6 +70,7 @@ content and figures here belong to this separate study.
 - **Algorithm notes:** [mathematics and implementation](docs/METHODS.md)
 - **Measured results:** [135-fit study report](results/quick/REPORT.md)
 - **Verification:** [actual commands and outcomes](docs/VALIDATION.md)
+- **Publication and CI:** [GitHub release verification](docs/PUBLICATION.md)
 - **Experiment config:** [quick CPU study](configs/quick.json)
 - **Demo:** [local Gradio launcher](app.py)
 
@@ -129,8 +131,9 @@ See [experimental protocol](docs/EXPERIMENTS.md) for all budgets and limitations
 
 ### 1. Install
 
-Use Python 3.11 or newer. The recorded verification used 3.14.2 on Windows;
-the other platforms/Python versions in the CI definition have not been run locally.
+Use Python 3.11 or newer. The measured Julia study used Python 3.14.2 on Windows.
+The published CPU CI matrix passed on Windows/Linux with Python 3.11 and 3.14;
+Julia integration remains locally verified on Windows. See [publication checks](docs/PUBLICATION.md).
 
 ```powershell
 git clone https://github.com/qinzhong631-ux/Symbolic-Discovery-Lab.git
@@ -329,7 +332,7 @@ symbolic-discovery-lab/
 │   ├── backend_check/          # Real Julia initialization/search evidence
 │   └── Julia{Project,Manifest}.toml, environment.freeze.txt, demo_check.json
 ├── docs/                       # Protocol, installation, review, validation, handoff
-├── .github/workflows/tests.yml # CPU CI definition; remote execution not claimed
+├── .github/workflows/tests.yml # Windows/Linux × Python 3.11/3.14 CPU CI
 ├── app.py
 ├── pyproject.toml, requirements.txt
 ├── LICENSE, CITATION.cff, licenses/THIRD_PARTY.md
@@ -349,7 +352,8 @@ Finite probes cannot establish equality of full mathematical domains.
 The larger five-seed [reference configuration](configs/reference.json) is provided
 but **was not executed**. Next steps: evaluation-count-matched searches, declared
 grammar ablations, wider OOD domains, correlated/noisy real measurements and
-stronger uncertainty analysis. WSL2 and the remote CI matrix are unverified here.
+stronger uncertainty analysis. WSL2 remains unverified; the remote CPU CI matrix
+passed on all four platform/Python combinations. Julia-enabled CI is opt-in.
 
 ---
 

@@ -3,14 +3,18 @@
 ## 1. 当前任务与最终目标
 
 交付独立、可运行、可复现的 Python 科研实验项目，用于符号回归、算法比较和
-数学公式发现，并适合 AI 科研实习申请展示。仓库拟用名 symbolic-discovery-lab。
+数学公式发现，并适合 AI 科研实习申请展示。用户随后要求上传至
+https://github.com/qinzhong631-ux/Symbolic-Discovery-Lab，并参考 GraphMeta 的 README 呈现。
 
 ## 2. 当前状态与本轮结论
 
 三阶段开发完成。本地 Windows CPU 已运行 PySR/Julia、Polynomial、PyTorch MLP、
 四类实验、五组图表及 Gradio。最终含 Julia 测试 27 项通过；默认测试 26 项通过、
 1 项明确跳过。完整比较 135 次拟合成功。已完成独立代码审查及真实网页连续模型切换。
-尚未创建或推送 GitHub 远端仓库；本地源代码目录和交付 ZIP 保留完整结果。
+完整项目已发布到指定 GitHub 仓库 main，保留原始提交历史。完整代码提交
+2876e9797baf446a2c32672a6317d579c68dcdff，树哈希与本地准备版本完全一致。
+GitHub 四组 CPU CI（Windows/Linux × Python 3.11/3.14）全部通过。
+首页已加入参考风格的居中标题、徽章、功能表、导航、分区及真实结果图。
 
 ## 3. 已完成工作
 
@@ -21,13 +25,16 @@
 - PNG/SVG 图表、英文 README、方法/实验/安装/验证/审查文档。
 - Gradio 采用每请求独立工作进程；真实 HTTP 顺序 polynomial→mlp→pysr→all 成功。
 - 已修复失败记录/绘图泄漏、提前完成标记、导出精度和 Julia/Torch 初始化顺序。
+- 已上传 1,391 个源代码/证据文件，远端树哈希完整匹配；真实通过四组远端 CI。
+- 新增 docs/PUBLICATION.md，记录准确提交、CI 链接与证据边界。
 
 ## 4. 创建或修改的文件
 
 项目所有新增文件位于 `E:\AI\symbolic-discovery-lab`。完整结构见
 `docs/DIRECTORY_TREE.md`，逐文件哈希见 `results/artifact_inventory.csv`。
 MiniGPT 仓库仅作呈现参考，未修改。`.venv/`、`.julia/`、`runs/` 为本地环境/缓存，
-不进入交付 ZIP。交付归档位于 `E:\AI\symbolic-discovery-lab.zip`。
+不进入交付 ZIP 或 GitHub。初始交付归档位于 `E:\AI\symbolic-discovery-lab.zip`；
+GitHub 首页与发布文档是后续版本，以远端 main 和本地最新代码为准。
 
 ## 5. 命令、测试与验证结果
 
@@ -44,12 +51,19 @@ MiniGPT 仓库仅作呈现参考，未修改。`.venv/`、`.julia/`、`runs/` �
   540 指标记录、5 图对核验成功。
 - `python scripts/verify_demo.py --include-symbolic`：连续真实 HTTP 请求成功。
 - Ruff lint/format、pip check、wheel 构建通过。
+- 本轮 `python -m pytest -q --basetemp=runs/pytest-publication`：26 passed，1 skipped。
+- `python scripts/prepare_publication.py`：README 链接/图像及发布清单核验。
+- GitHub Actions 38428807093：Windows/Linux、Python 3.11/3.14 四组成功。
+- 发布使用 GitHub 连接工具创建完整树/提交并以 expected_sha 更新 main；
+  未强制覆盖远端。直接 Git push 曾因网络失败，Git fetch 后已同步完整代码提交。
 
 ## 6. 阻碍与尚存问题
 
 无阻碍本地运行的已知问题。Julia 首次自动下载安装及编译实际耗时约 23.5 分钟。
-reference 大预算配置、WSL2、Python 3.11、远端 CI 和完全隔离重装尚未验证。
-实际开发复用已有 NumPy/PyTorch 环境，依赖版本均已记录。
+reference 大预算配置、WSL2、Linux Julia 后端尚未验证。
+Windows/Linux 的 Python 3.11/3.14 默认测试与 CPU smoke 已在新建远端 CI 环境通过。
+实际初始开发复用已有 NumPy/PyTorch 环境，依赖版本均已记录；不得把历史开发环境
+描述为完全隔离重装。具体 CI 覆盖和 Julia opt-in 边界见 docs/PUBLICATION.md。
 
 ## 7. 已确认约束、决定与证据边界
 
@@ -71,7 +85,7 @@ A/B 的 PySR 恢复好，C 在零噪声 n=512 下只 1/3 种子恢复，MLP 平�
 
 ## 9. 下一项最小任务
 
-当前开发任务已完成。后续可先授权发布 GitHub；科研扩展优先执行
+当前开发与 GitHub 发布任务已完成。科研扩展优先执行
 configs/reference.json 或预先声明搜索语法/算力匹配消融，不改已有结果。
 
 ## 10. 下一会话启动指令

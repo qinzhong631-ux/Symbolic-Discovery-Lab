@@ -6,6 +6,6 @@ authors:
 type: software
 repository-code: "https://github.com/qinzhong631-ux/Symbolic-Discovery-Lab"
 version: 0.1.0
-date-released: 2026-10-13
+date-released: 2026-10-14
 license: MIT
 abstract: "An exploratory, reproducible CPU study of symbolic regression, polynomial regression and neural prediction on synthetic mathematical laws."

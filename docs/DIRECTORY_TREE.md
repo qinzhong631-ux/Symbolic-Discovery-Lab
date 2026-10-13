@@ -46,6 +46,7 @@ symbolic-discovery-lab/
 │   ├── reexport_polynomials.py
 │   ├── build_showcase.py
 │   ├── package_release.py
+│   ├── prepare_publication.py
 │   └── run_experiments.ps1
 ├── licenses/THIRD_PARTY.md
 ├── docs/
@@ -57,6 +58,7 @@ symbolic-discovery-lab/
 │   ├── CODE_REVIEW.md
 │   ├── DIRECTORY_TREE.md
 │   ├── VALIDATION.md
+│   ├── PUBLICATION.md
 │   └── handoffs/2026-10-13-delivery.md
 └── results/
     ├── environment.freeze.txt

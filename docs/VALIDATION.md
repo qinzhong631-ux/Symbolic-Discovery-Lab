@@ -1,7 +1,8 @@
 # Verification record — 2026-10-13
 
-All outcomes below were actually executed on the delivery machine. No remote CI,
-WSL2 run or larger reference study is represented as tested.
+The development outcomes below were executed on the delivery machine. Subsequent
+GitHub publication and passing Windows/Linux CI are recorded in [PUBLICATION.md](PUBLICATION.md).
+WSL2 and the larger reference study remain untested.
 
 ## Environment
 
@@ -104,5 +105,6 @@ validation minima, rechecks aggregated statistics, and parses figures/reports.
 - Fully isolated fresh dependency installation: instructions provided, not rebuilt.
 - Independent scientific replication, significance tests and real measurement
   datasets: not performed.
-- No GitHub repository was created or pushed in this delivery. The project and
-  archive are local artifacts ready for the user's publication workflow.
+- The initial development delivery was local. On 2026-10-14 the user requested
+  publication; the complete project was published to the specified GitHub repository,
+  and all four CPU CI jobs passed. See PUBLICATION.md for the exact commit/run.
